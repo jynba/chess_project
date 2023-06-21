@@ -1,0 +1,34 @@
+$namespace: 'jy' !default;
+$block-sel: '-' !default;
+$element-sel: '__' !default;
+$modifier-sel: '--' !default;
+
+@mixin b($block) {
+	@at-root {
+		.#{$namespace}#{$block-sel}#{$block} {
+			@content;
+		}
+	}
+}
+
+@mixin e($element) {
+	@at-root {
+		&#{ $element-sel }#{$element} {
+			@content;
+		}
+	}
+}
+
+@mixin m($modifier) {
+	@at-root {
+		&#{ $modifier-sel }#{$modifier} {
+			@content;
+		}
+	}
+}
+// bfc 块级格式化上下文 通常用overflow:hidden来保证不同块内元素不影响外部布局
+@mixin bfc {
+	height: 100%;
+	overflow: hidden;
+}
+
