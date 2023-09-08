@@ -3,6 +3,13 @@
 目标：基于大数据的象棋人工智能。
 人类作为红方先走棋，AI作为黑方根据人类走棋后的棋局状态做出相应的走棋策略，以尽可能战胜人类为依据。
 
+## 项目演示链接
+中国象棋网页链接：
+https://chess.stm32-mqtt.top
+中国象棋APP下载链接:
+https://chess.stm32-mqtt.top/zhchess.apk
+
+![chess](./readme/chess.png)
 ## 主要工作
 * 前端：
 使用框架：zh-chess、Element-plus
@@ -41,13 +48,6 @@
 ## 如何开始
 1. 克隆本仓库：`git clone https://github.com/jynba/chess_project.git`
 2. 进入项目目录：`cd chess_project`
-
-## 使用说明
-
-中国象棋网页链接：
-https://chess.stm32-mqtt.top
-中国象棋APP下载链接:
-https://chess.stm32-mqtt.top/zhchess.apk
 
 
 ## 贡献与许可
