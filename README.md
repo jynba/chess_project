@@ -21,11 +21,14 @@ https://chess.stm32-mqtt.top/zhchess.apk
 
 * 数据处理
 使用技术：Selenium。
+
 棋谱数据来源：http://game.onegreen.net/chess/。
+
 具体实现：使用Selenium模拟用户访问该棋谱网站并获得该页面HTML源代码，再通过正则表达式获取该局红黑双方下棋动作列表movelist并将收集到的数据写入xlsx文件。该网页数据获取完毕后，模拟点击网页上局棋谱，收集其他棋局数据，直至数据全部收集完毕。
 
 * 后端
 框架选择：FastAPI （FastAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框架）
+
 该项目中使用FastAPI编写了两个接口。
 1./predictChessAction/{chessboard_status}    GET请求
 • 作用：该接口接收一个棋局状态作为路径参数，用于预测下一步最可能的棋子移动。
